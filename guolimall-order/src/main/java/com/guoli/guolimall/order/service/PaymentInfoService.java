@@ -1,0 +1,20 @@
+package com.guoli.guolimall.order.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.guoli.common.utils.PageUtils;
+import com.guoli.guolimall.order.entity.PaymentInfoEntity;
+
+import java.util.Map;
+
+/**
+ * 支付信息表
+ *
+ * @author brandnewlifejackie26
+ * @email test@gmail.com
+ * @date 2020-09-30 13:25:08
+ */
+public interface PaymentInfoService extends IService<PaymentInfoEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
