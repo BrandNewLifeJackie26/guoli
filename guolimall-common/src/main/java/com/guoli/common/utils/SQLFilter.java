@@ -8,7 +8,7 @@
 
 package com.guoli.common.utils;
 
-import io.renren.common.exception.RRException;
+import com.guoli.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**

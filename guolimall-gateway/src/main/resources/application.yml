@@ -22,6 +22,13 @@ spring:
           predicates:
             - Query=url,qq
 
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
+
   application:
     name: guolimall-gateway
 
